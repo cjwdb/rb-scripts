@@ -1,20 +1,27 @@
-cd ~/git/redballoon/CoreApi
-git remote -v
-cd ~/git/redballoon/ECommerceUI
-git remote -v
-cd ~/git/redballoon/AlfredUI
-git remote -v
-cd ~/git/redballoon/Gestalt
-git remote -v
-cd ~/git/redballoon/Legacy-Task
-git remote -v
-cd ~/git/redballoon/LiveAvailabilityAPI
-git remote -v
-cd ~/git/redballoon/LiveAvailabilityDomain
-git remote -v
-cd ~/git/redballoon/LiveAvailabilitySlickDao
-git remote -v
-cd ~/git/redballoon/SupplierUI
-git remote -v
-cd ~/git/redballoon/morpheus-web
-git remote -v
+function getRemoteUrl {
+if [ -e $1 ]; then
+  cd $1
+  git remote -v 
+  
+fi
+}
+
+getRemoteUrl ~/git/redballoon/CoreApi
+
+getRemoteUrl ~/git/redballoon/ECommerceUI
+
+getRemoteUrl ~/git/redballoon/AlfredUI
+
+getRemoteUrl ~/git/redballoon/Gestalt
+
+getRemoteUrl ~/git/redballoon/Legacy-Task
+
+getRemoteUrl ~/git/redballoon/LiveAvailabilityAPI
+
+getRemoteUrl ~/git/redballoon/LiveAvailabilityDomain
+
+getRemoteUrl ~/git/redballoon/LiveAvailabilitySlickDao
+
+getRemoteUrl ~/git/redballoon/SupplierUI
+
+getRemoteUrl ~/git/redballoon/morpheus-web
