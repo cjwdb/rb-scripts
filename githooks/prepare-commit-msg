@@ -1,0 +1,5 @@
+#!/bin/bash
+
+branchname=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+originalmessage=$(cat $1)
+echo "$branchname: $originalmessage" > "$1"
